@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailFragment"
+        android:padding="5dp"
+        >
+
+        <!-- fragment detail layout -->
+
+        <ImageView
+            android:id="@+id/detailImage"
+            android:layout_width="match_parent"
+            android:layout_height="350dp" />
+
+        <TextView
+            android:id="@+id/dNm_produk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailImage"
+            android:layout_marginBottom="10dp"
+            android:hint="Nama Produk"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/dHarga_produk"
+            android:layout_below="@id/dNm_produk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Harga Produk"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_buy"
+            android:layout_alignParentStart="true"
+            android:text="Stok tersedia  "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dStok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_buy"
+            android:layout_toEndOf="@+id/tv2"
+            android:hint="Stok"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_below="@id/dHarga_produk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Deskripsi Produk"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/dDeskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv1"
+            android:hint="Deskripsi Produk" />
+
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_width="407dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/teal_700"
+            android:contentDescription="@string/foto_produk"
+            android:text="buy" />
+
+    </RelativeLayout>
+</layout>

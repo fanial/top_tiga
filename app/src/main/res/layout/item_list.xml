@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="item_produk"
+            type="com.fal.top_tiga.MainData" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/vNm_produk"
+                android:layout_below="@id/vImg_produk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:text='@{item_produk.nm_produk , default="nama produk"}'/>
+
+            <TextView
+                android:id="@+id/vHarga_produk"
+                android:layout_below="@id/vNm_produk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text='@{item_produk.harga, default="harga"}'
+                />
+
+            <ImageView
+                android:id="@+id/vImg_produk"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                app:imageResource="@{item_produk.img_produk}"
+                android:contentDescription="@string/foto_produk" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

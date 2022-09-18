@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/KotlinApp/CH4/top_tiga/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/KotlinApp/CH4/top_tiga/app/src/main/res/layout/activity_produk.xml" value="0.1" />
+        <entry key="..\:/KotlinApp/CH4/top_tiga/app/src/main/res/layout/fragment_detail.xml" value="0.33177083333333335" />
+        <entry key="..\:/KotlinApp/CH4/top_tiga/app/src/main/res/layout/fragment_main.xml" value="0.2" />
+        <entry key="..\:/KotlinApp/CH4/top_tiga/app/src/main/res/layout/item_list.xml" value="0.33" />
         <entry key="..\:/KotlinApp/CH4/top_tiga/app/src/main/res/layout/item_produk.xml" value="0.22" />
       </map>
     </option>
