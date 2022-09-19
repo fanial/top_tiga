@@ -4,11 +4,12 @@
 
     <data>
         <variable
-            name="produk"
-            type="com.fal.top_tiga.latihansatu.DataProduk" />
+            name="item_produk"
+            type="com.fal.top_tiga.MainData" />
     </data>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/btn_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp">
@@ -23,21 +24,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:text='@{produk.nm_produk , default="nama produk"}' />
+                android:text='@{item_produk.nm_produk , default="nama produk"}' />
 
             <TextView
                 android:id="@+id/vHarga_produk"
                 android:layout_below="@id/vNm_produk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text='@{produk.harga}' />
+                android:text='@{item_produk.harga}' />
 
             <ImageView
                 android:id="@+id/vImg_produk"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_alignParentEnd="true"
-                app:imageResource = "@{produk.img_produk}"
+                app:imageResource = "@{item_produk.img_produk}"
                 />
 
         </RelativeLayout>
